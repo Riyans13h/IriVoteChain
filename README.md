@@ -97,12 +97,12 @@ graph TD
 ### Setup Instructions
 ```bash
 # Clone repository
-git clone https://github.com/yourusername/SecureVotingSystem.git
-cd SecureVotingSystem
+git clone https://github.com/yourusername/IriVoteChain.git
+cd IriVoteChain
 
 # Install blockchain dependencies
 cd blockchain
-npm install
+npm install truffle 
 
 # Install API dependencies
 cd ../iris_api
