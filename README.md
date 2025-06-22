@@ -10,7 +10,7 @@
 5. [Installation Guide](#installation-guide)
 6. [Usage Instructions](#usage-instructions)
 7. [Testing Results](#testing-results)
-8. [Project Documentation](#project-documentation)
+8. [API Documentation](#project-documentation)
 9. [License](#license)
 10. [Contributing](#contributing)
 
@@ -85,7 +85,6 @@ graph TD
 ### Frontend
 - **HTML/CSS/JavaScript** - User interfaces
 - **React** - Admin dashboard (optional extension)
-- **Webcam API** - Iris image capture
 
 ## Installation Guide <a name="installation-guide"></a>
 ### Prerequisites
@@ -171,16 +170,6 @@ python -m http.server 8000
 - 0.1% false rejection rate (FRR)
 - Tamper-proof vote recording on blockchain
 
-## Project Documentation <a name="project-documentation"></a>
-### Full Documentation
-[Project Report PDF](docs/report.pdf)
-
-### Key Diagrams
-1. [System Architecture](docs/architecture.png)
-2. [Sequence Diagram](docs/sequence_diagram.png)
-3. [Database Schema](docs/database_schema.png)
-4. [Smart Contract Structure](docs/contract_structure.png)
-
 ### API Documentation
 ```yaml
 # Iris Verification API
@@ -212,6 +201,6 @@ Contributions are welcome! Please follow these steps:
 
 ---
 
-**Project Developed By:** Riyansh Sachan 
+**Project Developed By:** Riyansh Sachan(IIITA) 
 **(March-June) 2025**
-**Special Thank to IIT Delhi**
+**Special Thanks to IIT Delhi**
