@@ -83,9 +83,9 @@ graph TD
 - **SQLite** - Voter database
 
 ### Frontend
-- **HTML/CSS/JavaScript** - User interfaces
+- **HTML/CSS/JavaScript** - User interfaces 
 - **React** - Admin dashboard (optional extension)
-
+- **Webcam** - Iris image capture
 ## Installation Guide <a name="installation-guide"></a>
 ### Prerequisites
 - Python 3.8+
@@ -97,7 +97,7 @@ graph TD
 ### Setup Instructions
 ```bash
 # Clone repository
-git clone https://github.com/yourusername/IriVoteChain.git
+git clone https://github.com/Riyans13h/IriVoteChain.git
 cd IriVoteChain
 
 # Install blockchain dependencies
