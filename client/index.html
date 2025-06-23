@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Secure Voting - Voter</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="https://cdn.jsdelivr.net/npm/web3@1.8.0/dist/web3.min.js"></script>
+</head>
+<body>
+    <header>
+        <h1>Voter Dashboard</h1>
+    </header>
+
+    <main>
+        <div id="error-message" class="error"></div>
+        <div id="success-message" class="success"></div>
+
+        <section id="voter-connect-section">
+            <h2>Voter Authentication</h2>
+            <button id="voter-connect">Connect MetaMask</button>
+            <p>Connected Wallet: <span id="voter-address">Not connected</span></p>
+            <p>Network: <span id="network-info">Unknown</span></p>
+        </section>
+
+        <div id="voting-section" style="display:none">
+            <section id="iris-verification">
+                <h2>Iris Verification</h2>
+                <input type="file" id="iris-image" accept="image/*" capture="environment">
+                <button id="verify-iris">Verify Identity</button>
+                <p id="verification-status">Status: Not verified</p>
+            </section>
+
+            <section id="candidate-selection" style="display:none">
+                <h2>Candidates</h2>
+                <ul id="candidates-list"></ul>
+                <button id="cast-vote" disabled>Cast Vote</button>
+                <p id="vote-status"></p>
+            </section>
+        </div>
+    </main>
+
+    <script src="js/web3.js"></script>
+    <script src="js/voter.js"></script>
+</body>
+</html>

@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Secure Voting - Admin Dashboard</title>
+    <link rel="stylesheet" href="css/style1.css">
+    <script src="https://cdn.jsdelivr.net/npm/web3@1.8.0/dist/web3.min.js"></script>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Admin Dashboard</h1>
+        </header>
+
+        <main>
+            <div id="error-message" class="error"></div>
+            <div id="success-message" class="success"></div>
+
+            <section id="admin-connect-section" class="card">
+                <h2>Admin Authentication</h2>
+                <button id="admin-connect" class="btn">Connect MetaMask</button>
+                <div class="wallet-info">
+                    <div>Connected Wallet:</div>
+                    <div class="wallet-address" id="admin-address">Not connected</div>
+                    <div class="network-info" id="network-info"></div>
+                </div>
+            </section>
+
+            <div id="admin-controls" class="admin-controls">
+                <div class="dashboard">
+                    <div class="card">
+                        <h2>Voter Registration</h2>
+                        <div class="form-group">
+                            <label for="voter-address">Wallet Address</label>
+                            <input type="text" id="voter-address" placeholder="0x...">
+                        </div>
+                        <div class="form-group">
+                            <label for="admin-iris-image">Iris Image</label>
+                            <input type="file" id="admin-iris-image" accept="image/*">
+                        </div>
+                        <button id="register-voter" class="btn">Register Voter</button>
+                    </div>
+
+                    <div class="card">
+                        <h2>Candidate Management</h2>
+                        <div class="form-group">
+                            <label for="candidate-name">Candidate Name</label>
+                            <input type="text" id="candidate-name" placeholder="Enter candidate name">
+                        </div>
+                        <button id="add-candidate" class="btn">Add Candidate</button>
+                    </div>
+
+                    <div class="card">
+                        <h2>Election Management</h2>
+                        <div class="status-card">
+                            <div>Election Status:</div>
+                            <div class="status-indicator" id="election-status-indicator"></div>
+                            <span id="election-status-text">Inactive</span>
+                        </div>
+                        <button id="start-election" class="btn btn-success">Start Election</button>
+                        <button id="end-election" class="btn btn-danger">End Election</button>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <h2>Election Results</h2>
+                    <div id="election-results">
+                        <p>Election must be ended to view results</p>
+                    </div>
+                </div>
+            </div>
+        </main>
+    </div>
+
+    <script src="js/web3.js"></script>
+    <script src="js/admin.js"></script>
+</body>
+</html>
