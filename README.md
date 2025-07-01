@@ -202,5 +202,5 @@ Contributions are welcome! Please follow these steps:
 ---
 
 **Project Developed By:** Riyansh Sachan(IIITA) 
-**(March-June) 2025**
+**(March-May) 2025**
 **Special Thanks to IIT Delhi**
